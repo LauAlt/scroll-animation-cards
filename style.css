@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: violet;
+    
+}
+
+.grandote{
+    font-size: 120px;
+    color: indianred;
+    padding: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.caja{
+    background-color: #fff;
+    padding: 15px;
+    width: 300px;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h2{
+    font-size: 60px;
+    color: indianred;
+}
+
+.animado{
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.mostrarArriba {
+    animation: mostrarArriba 1s;
+}
+
+@keyframes mostrarArriba {
+    0%{
+
+        transform: translateY(60px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
